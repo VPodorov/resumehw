@@ -12,4 +12,4 @@ RUN yum update -y && yum install -y \
 
 COPY CV .
 
-CMD ["bash", "run.sh"]
+CMD ["bash", "/run.sh"]
