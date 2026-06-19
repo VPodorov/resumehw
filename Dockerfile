@@ -10,6 +10,6 @@ RUN yum update -y && yum install -y \
     texlive-dashrule \
     && yum clean all
 
-COPY CV .
+COPY CV /
 
 CMD ["bash", "/run.sh"]
