@@ -16,3 +16,4 @@ jobs:
         with:
           name: Resume PDF
           path: ${{ github.workspace }}/main.pdf
+          archive: false
