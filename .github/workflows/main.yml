@@ -12,7 +12,7 @@ jobs:
         uses: ./
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Resume PDF
           path: ${{ github.workspace }}/main.pdf
