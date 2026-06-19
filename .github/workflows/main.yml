@@ -1,0 +1,18 @@
+on: [push]
+
+jobs:
+  publish_pdf_job:
+    runs-on: ubuntu-latest
+    name: Create and publish PDF file
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build PDF
+        uses: ./
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Resume PDF
+          path: ${{ github.workspace }}/main.pdf

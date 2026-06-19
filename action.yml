@@ -1,0 +1,5 @@
+name: 'Build PDF from LaTeX'
+description: 'Build PDF LaTeX'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
